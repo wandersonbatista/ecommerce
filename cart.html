@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrinho</title>
+</head>
+<body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" width="125px" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="img/cart.png" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+<!-----------carrinho------------------->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-1.jpg" alt="">
+                        <div>
+                            <p>Blusa Vermelha</p>
+                            <small>Preço: R$50.00</small>
+                            <a href="">Excluir</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-2.jpg" alt="">
+                        <div>
+                            <p>Sapato Preto</p>
+                            <small>Preço: R$70.00</small>
+                            <a href="">Excluir</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$70.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-3.jpg" alt="">
+                        <div>
+                            <p>Calça Preta</p>
+                            <small>Preço: R$50.00</small>
+                            <a href="">Excluir</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$80.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Taxa</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>235</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        
+    </div>
+<!---------------Rodapé------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Baixe Nosso App</h3>
+                    <p>Download para Android  e IOS</p>
+                    <div class="app-logo">
+                        <img src="img/app-store.png" alt="">
+                        <img src="img/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png" alt="">
+                    <p>Sustentabilidade e preços acessíveis</p>
+                </div> 
+                <div class="footer-col-3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog</li>
+                        <li>Política de Retorno</li>
+                        <li>Seja um Afiliado</li>
+                    </ul>
+                </div> 
+                <div class="footer-col-4">
+                    <h3>Nos Siga</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div> 
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - easy Tutotiais</p>
+        </div>
+    </div>
+<!----------------js menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menuToggle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight="200px";
+            }else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
